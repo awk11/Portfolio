@@ -66,7 +66,7 @@
     <h2>Experience</h2>
     <h4>Professional Work</h4>
     <br>
-    <div class="row slideanim">
+    <div class="row">
         @for (var i = 0; i < Setup.ProfessionalWork.Count; i++)
         {
             <div class="col-sm-3">
@@ -83,11 +83,11 @@
     <br><br>
     <h4>Web Development</h4>
     <br>
-    <div class="row slideanim">
+    <div class="row">
         @for (var i = 0; i < Setup.WebDevelopment.Count; i++)
         {
             <div class="col-sm-3">
-                <div class="prj" onclick="DisplayProject('WebDevelopment', @i)">
+                <div class="prj" onclick="DisplayProject('WebDevelopment', @i);">
                     <img class="normal" src="@String.Concat(Setup.WebDevelopment[i].TileRef, ".png")" alt="" title="" width="250" height="250" />
                     <img class="onhover" src="@String.Concat(Setup.WebDevelopment[i].TileRef, "Top.png")" alt="@Setup.WebDevelopment[i].Name" title="@Setup.WebDevelopment[i].Name" width="250" height="250" />
                 </div>
@@ -100,7 +100,7 @@
     <br><br>
     <h4>Application Development</h4>
     <br>
-    <div class="row slideanim">
+    <div class="row">
         @for (var i = 0; i < Setup.AppDevelopment.Count; i++)
         {
             <div class="col-sm-3">
@@ -117,11 +117,11 @@
     <br><br>
     <h4>Design</h4>
     <br>
-    <div class="row slideanim">
+    <div class="row">
         @for (var i = 0; i < Setup.Design.Count; i++)
         {
             <div class="col-sm-3">
-                <div class="prj" onclick="DisplayProject('Design', @i)">
+                <div class="prj" onclick="DisplayProject('Design', @i);">
                     <img class="normal" src="@String.Concat(Setup.Design[i].TileRef, ".png")" alt="" title="" width="250" height="250" />
                     <img class="onhover" src="@String.Concat(Setup.Design[i].TileRef, "Top.png")" alt="@Setup.Design[i].Name" title="@Setup.Design[i].Name" width="250" height="250" />
                 </div>
@@ -133,23 +133,15 @@
     
     <br><br>
 </div>
-<div id="ProfessionalWork" class="container-fluid text-center" style="display: none;"></div>
-<div id="WebDevelopment" class="container-fluid text-center" style="display: none;"></div>
-<div id="AppDevelopment" class="container-fluid text-center" style="display: none;"></div>
-<div id="Design" class="container-fluid text-center" style="display: none;"></div>
-
-<script>
-
-</script>
 
 <!-- Container (Portfolio Section) -->
-<div id="projectDisplay" class="container-fluid text-center">
-    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+<div id="projectDisplay" class="container-fluid row slide ">
+    @*<div id="myCarousel" class="carousel col-sm-6" data-ride="carousel">
         <!-- Indicators -->
-        <ol id="projCarouselInds" class="carousel-indicators"></ol>
+        <ol id="projCarouselInds" class="carousel-indicators"><li data-target="#myCarousel" data-slide-to="0" class="active"></li></ol>
 
         <!-- Wrapper for slides -->
-        <div id="projMedia" class="carousel-inner" role="listbox"></div>
+        <div id="projMedia" class="carousel-inner" role="listbox"><div class="item active"></div></div>
 
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -160,8 +152,8 @@
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-        <div id="projDetails"></div>
     </div>
+    <div id="projDetails" class="col-sm-6"></div>*@
 </div>
 
 <!-- Container (Contact Section) -->
