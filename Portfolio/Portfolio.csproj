@@ -208,12 +208,12 @@
     <Content Include="Media\Lawn Gnome Rage\lawnGnomeRage5.png" />
     <Content Include="Media\Lawn Gnome Rage\lawnGnomeRage6.png" />
     <Content Include="Media\Lively\lively.png" />
-    <Content Include="Media\Lively\lively1.PNG" />
-    <Content Include="Media\Lively\lively2.PNG" />
-    <Content Include="Media\Lively\lively3.PNG" />
-    <Content Include="Media\Lively\lively4.PNG" />
-    <Content Include="Media\Lively\lively5.PNG" />
-    <Content Include="Media\Lively\lively6.PNG" />
+    <Content Include="Media\Lively\lively1.png" />
+    <Content Include="Media\Lively\lively2.png" />
+    <Content Include="Media\Lively\lively3.png" />
+    <Content Include="Media\Lively\lively4.png" />
+    <Content Include="Media\Lively\lively5.png" />
+    <Content Include="Media\Lively\lively6.png" />
     <Content Include="Media\Spider Web\spiderweb.mp4" />
     <Content Include="Media\Spider Web\spiderweb.png" />
     <Content Include="Media\Tiles\aiwarzone.png" />
@@ -279,10 +279,11 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Experience.cshtml" />
+    <Content Include="Views\Home\Resume.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

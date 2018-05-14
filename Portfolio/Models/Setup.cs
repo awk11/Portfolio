@@ -79,10 +79,99 @@ namespace Portfolio
             AiWarzone.MediaRefs.Add("/Media/AI Warzone/aiwarzone.png");
             AppDevelopment.Add(AiWarzone);
 
+            Project CellsvVirus = new Project("Cells v Virus", "/Media/Tiles/cvv", "This was a class assignment in the fall of 2014. The goal of this project was to create a simulation in which one type of entity would pursue and assimilate another type of entity until all entities on the screen were of the same type. Similar to a humans and zombie type of scenario. However, for this project, I decided to change the theme to cells and viruses. In this simulation, entities use pursuit, evasion, and obstacle avoidance. The cells simply wander, or run away when they are near a virus, while the virus' seek the cells, or just wander when none are nearby.");
+            CellsvVirus.SkillList.Add("Game/Behavioral AI");
+            CellsvVirus.SkillList.Add("Java/Processing API");
+            CellsvVirus.MediaRefs.Add("/Media/Cells v Virus/CVV.mp4");
+            CellsvVirus.MediaRefs.Add("/Media/Cells v Virus/cvv.png");
+            AppDevelopment.Add(CellsvVirus);
+
+            Project Asteroids = new Project("Asteroids", "/Media/Tiles/asteroids", "This was an in class assignment made in java's processing API. For this project, I decided to take a new spin on asteroids by making it Halo themed (the famous video game franchise). This required the use of game physics as well as animation programming. The game has music as well as menus, and is basically a customized asteroids clone.");
+            Asteroids.SkillList.Add("Game Development");
+            Asteroids.SkillList.Add("Java/Processing API");
+            Asteroids.MediaRefs.Add("/Media/Asteroids/asteroids.mp4");
+            Asteroids.MediaRefs.Add("/Media/Asteroids/asteroids.png");
+            AppDevelopment.Add(Asteroids);
+
+            Project DuelingGrounds = new Project("Dueling Grounds", "/Media/Tiles/duelingGrounds", "Dueling Grounds is an arena based fighting game for 2 players, where players fight in rounds with one hit KO's until one player wins 10 rounds and is declared the winner Each player can pick from three different character's all with unique playstyles. For this project, I worked in a small team, but my work included desgining and implementing all of the characters, acting as the team leader, designing the arena, and a majority of the gameplay programming.");
+            DuelingGrounds.SkillList.Add("Game Development");
+            DuelingGrounds.SkillList.Add("Game Design");
+            DuelingGrounds.SkillList.Add("C#");
+            DuelingGrounds.SkillList.Add("XNA");
+            DuelingGrounds.MediaRefs.Add("/Media/Dueling Grounds/duelingGrounds.png");
+            DuelingGrounds.MediaRefs.Add("/Media/Dueling Grounds/duelingGrounds2.png");
+            DuelingGrounds.MediaRefs.Add("/Media/Dueling Grounds/duelingGrounds3.png");
+            DuelingGrounds.MediaRefs.Add("/Media/Dueling Grounds/duelingGrounds4.png");
+            DuelingGrounds.MediaRefs.Add("/Media/Dueling Grounds/duelingGrounds5.png");
+            DuelingGrounds.MediaRefs.Add("/Media/Dueling Grounds/duelingGrounds6.png");
+            DuelingGrounds.MediaRefs.Add("/Media/Dueling Grounds/duelingGrounds7.png");
+            DuelingGrounds.MediaRefs.Add("/Media/Dueling Grounds/duelingGrounds8.png");
+            AppDevelopment.Add(DuelingGrounds);
+
+            Project ForcePong = new Project("Force Pong", "/Media/Tiles/forcePong", "For this project, I was assigned as part of a small team, to make a game using OpengGL. So ultimately we decided to make a simple pong game, but with the twist of being able to control the ball while its moving across the screen. Both players can move it in both directions and it's actually a lot of fun.For this project, I worked on implementing the controls as well as all of the physics programming and collisions. The github can be viewed<a href='https://github.com/Raccoon-Studios/Main-Game' target='_blank'>here</a>");
+            ForcePong.SkillList.Add("Graphocs Programming");
+            ForcePong.SkillList.Add("OpenGL");
+            ForcePong.SkillList.Add("C++");
+            ForcePong.MediaRefs.Add("/Media/Force Pong/forcePong.mp4");
+            ForcePong.MediaRefs.Add("/Media/Force Pong/forcePong.png");
+            AppDevelopment.Add(ForcePong);
+
+            Project Lively = new Project("Lively", "/Media/Tiles/lively", "This project is an IOS app I created with one other person for the IOS App Challenge 2016, which was hosted by Apple at my university.For the hackathon, we had a weekend to build a multi - platform app.So what we eventually created by the end of the weekend was Lively. Lively is an app that allows you to create photo collections based on vacations, life events, or whatever your heart desires, and tag a ocation for the event so you never forget where it was.In addition you can also write short blurbs about each picture you add to a collection, similar to how people write on the backs of actual photographs.Lively has both IOS and tvOS functionality, and transfers data over icloud for the user to use both asynchronously. For the app, my contributions were primarily all of the front end programming and design work for the ios version of the app. I did a lot of the contraints and storyboard work, as well as designed the logo and look of the app. I also implemented the location tagging feature.This was my first experience using swift in any capacity.The github repo can be viewed <a href='https://github.com/SMaraia/Lively' target='_blank'>here</a>. Note that all of my commits for this are labeled as Apple because I didnt own a mac and had to borrow one from Apple.");
+            Lively.SkillList.Add("iOS Development");
+            Lively.SkillList.Add("Mobile Design");
+            Lively.SkillList.Add("Swift");
+            Lively.MediaRefs.Add("/Media/Lively/lively1.png");
+            Lively.MediaRefs.Add("/Media/Lively/lively2.png");
+            Lively.MediaRefs.Add("/Media/Lively/lively3.png");
+            Lively.MediaRefs.Add("/Media/Lively/lively4.png");
+            Lively.MediaRefs.Add("/Media/Lively/lively5.png");
+            Lively.MediaRefs.Add("/Media/Lively/lively6.png");
+            AppDevelopment.Add(Lively);
+
             #endregion
 
             #region Web Development Projects Setup
             WebDevelopment = new List<Project>();
+
+            Project CGOLNode = new Project("C-GOL", "/Media/Tiles/c-gol", "For this project, I created and designed a simple website that hosts an interactive Conway’s Game of Life simulator. Users can customize the rules, paint or erase cells within the simulation at any time while it's paused, and even save the creations they make to an account they made. This site has a fully functional login system, and was built using javascript, jquery, html, css, express.js, MongoDB, and Redis. It can be seen at <a href='http://c-gol.herokuapp.com' target='_blank'>c-gol.herokuapp.com</a>");
+            CGOLNode.SkillList.Add("Game Theory (CS Topic)");
+            CGOLNode.SkillList.Add("JavaScript");
+            CGOLNode.SkillList.Add("HTML/CSS");
+            CGOLNode.SkillList.Add("Canvas");
+            CGOLNode.SkillList.Add("Express/Node js");
+            CGOLNode.SkillList.Add("MongoDB");
+            CGOLNode.SkillList.Add("Heroku");
+            CGOLNode.SkillList.Add("Model View Controller Architecture");
+            CGOLNode.MediaRefs.Add("/Media/Game of Life (Node)/c-gol1.png");
+            CGOLNode.MediaRefs.Add("/Media/Game of Life (Node)/c-gol2.png");
+            CGOLNode.MediaRefs.Add("/Media/Game of Life (Node)/c-gol3.png");
+            CGOLNode.MediaRefs.Add("/Media/Game of Life (Node)/c-gol4.png");
+            WebDevelopment.Add(CGOLNode);
+
+            Project GOLNet = new Project("A-GOL", "/Media/Tiles/c-gol", "TBD");
+            GOLNet.SkillList.Add(".NET");
+            GOLNet.SkillList.Add("C#");
+            GOLNet.SkillList.Add("JavaScript");
+            GOLNet.SkillList.Add("HTML/CSS");
+            GOLNet.SkillList.Add("Canvas");
+            GOLNet.SkillList.Add("Game Theory (CS Topic)");
+            GOLNet.SkillList.Add("Azure");
+            GOLNet.SkillList.Add("Model View Controller Architecture");
+            GOLNet.MediaRefs.Add("/Media/Game of Life (NET)/c-gol1.png");
+            GOLNet.MediaRefs.Add("/Media/Game of Life (NET)/c-gol2.png");
+            GOLNet.MediaRefs.Add("/Media/Game of Life (NET)/c-gol3.png");
+            GOLNet.MediaRefs.Add("/Media/Game of Life (NET)/c-gol4.png");
+            WebDevelopment.Add(GOLNet);
+
+            Project Portfolio = new Project("Portfolio (this)", "/Media/Tiles/c-gol", "TBD");
+            Portfolio.SkillList.Add(".NET");
+            Portfolio.SkillList.Add("C#");
+            Portfolio.SkillList.Add("HTML/CSS");
+            Portfolio.SkillList.Add("JavaScript");
+            Portfolio.SkillList.Add("Azure");
+            Portfolio.SkillList.Add("Model View Controller Architecture");
+            Portfolio.MediaRefs.Add("/Media/Portfolio/portfolio.png");
+            WebDevelopment.Add(Portfolio);
 
             Project Vehicles = new Project("Vehicles Demo", "/Media/Tiles/vehicles", "For this project, I implemented an interactive simulation of braitenburg vehicles. There is one vehicle that is atracted to the light sources, and one that is repeled by them.As they move along the screen, they draw a trail of their path.Over time this can be used to create very interesting abstract art peices, and can be influneced by dragging the lights around with the mouse cursor.The user can also customize alot about the simulation, including the colors of the vehicles and their trails, the brightness of each individual light, as well as even add new lights to the simulation. The user can also increase or decrease the background brightness of the simulation, and toggle off the vehicles an dlight sources so they can focus on viewing the trails as they're created. There isnt much to this project, but it's a very unique and interesting experience to play around with. <a href = 'https://people.rit.edu/~awk9293/CompAesthetics/project2.html' target= '_blank' >It can be viewed here.</a>");
             Vehicles.SkillList.Add("Braitenburg Vehicles");
@@ -95,6 +184,14 @@ namespace Portfolio
             Vehicles.MediaRefs.Add("/Media/Vehicles/vehicles5.png");
             WebDevelopment.Add(Vehicles);
 
+            Project Audio = new Project("Audio Visualizer", "/Media/Tiles/audioVisualizer", "This project is a visualizer for audio that is played through the page. I can't include too many songs, because copyright, but basically what it does is takes data from the audio thats playing, and alters the image on the screen based on that.There are a lot of different options for how you can customize the experience, which are accessed by hitting the square in the top right corner.<a href='https://people.rit.edu/~awk9293/330/audioproject.html' target='_blank'> You can play around with it yourself here.</a>");
+            Audio.SkillList.Add("Web Audio API");
+            Audio.SkillList.Add("JavaScript");
+            Audio.SkillList.Add("Canvas");
+            Audio.MediaRefs.Add("/Media/Audio/audioVisualizer1.png");
+            Audio.MediaRefs.Add("/Media/Audio/audioVisualizer2.png");
+            WebDevelopment.Add(Audio);
+
             #endregion
 
             #region Design Projects Setup
@@ -106,6 +203,30 @@ namespace Portfolio
             SpiderWeb.MediaRefs.Add("/Media/Spider Web/spiderweb.mp4");
             SpiderWeb.MediaRefs.Add("/Media/Spider Web/spiderweb.png");
             Design.Add(SpiderWeb);
+
+            Project BlueVoid = new Project("Blue Void", "/Media/Tiles/bluevoid", "This project was a class assignment in which I was tasked with creating, designing, and prototyping the design of a mobile game application. For this project, I created moodboards, sketched and planned out the user interface of the app, as well as doing considerable on paper testing of my designs.");
+            BlueVoid.SkillList.Add("");
+            BlueVoid.MediaRefs.Add("/Media/Blue Void/bluevoid.png");
+            BlueVoid.MediaRefs.Add("/Media/Blue Void/bluevoid2.png");
+            BlueVoid.MediaRefs.Add("/Media/Blue Void/bluevoid3.png");
+            BlueVoid.MediaRefs.Add("/Media/Blue Void/bluevoid4.png");
+            BlueVoid.MediaRefs.Add("/Media/Blue Void/bluevoid5.png");
+            BlueVoid.MediaRefs.Add("/Media/Blue Void/bluevoid6.png");
+            BlueVoid.MediaRefs.Add("/Media/Blue Void/bluevoid7.png");
+            BlueVoid.MediaRefs.Add("/Media/Blue Void/bluevoid8.png");
+            BlueVoid.MediaRefs.Add("/Media/Blue Void/bluevoid9.png");
+            Design.Add(BlueVoid);
+
+            Project LawnGnomeRage = new Project("Lawn Gnome Rage", "/Media/Tiles/lawnGnomeRage", "Lawn Gnome Rage is an analog board game for 2-6 players I made as part of a small team, with the objective of controlling the entire neighborhood by controlling all of the control points, or capitols. It's like RISK in that aspect, however there are many differences in the way the game is played.In Lawn Gnome Rage, you have different units, strong gnomes, defense gnomes and stealth gnomes, all of which have different purposes and uses for a variety of situations.When two gnomes from posing teams battle eachother, the players use a d & d style battle system to determine a winner(as in players role appropriate dice and add any buffs or weaknesses). Each turn the player draw's a gnome card with a type of their choosing (strong, defense, or stealth), and when a player has both a body and a head for the type of gnome they want to build, they can build the gnome and place it at one of their capitols. <br><br> My involvement in this project consisted of helping to design and implement rules, as well as design the game board.");
+            LawnGnomeRage.SkillList.Add("");
+            LawnGnomeRage.MediaRefs.Add("/Media/Lawn Gnome Rage/lawnGnomeRage0.png");
+            LawnGnomeRage.MediaRefs.Add("/Media/Lawn Gnome Rage/lawnGnomeRage1.png");
+            LawnGnomeRage.MediaRefs.Add("/Media/Lawn Gnome Rage/lawnGnomeRage2.png");
+            LawnGnomeRage.MediaRefs.Add("/Media/Lawn Gnome Rage/lawnGnomeRage3.png");
+            LawnGnomeRage.MediaRefs.Add("/Media/Lawn Gnome Rage/lawnGnomeRage4.png");
+            LawnGnomeRage.MediaRefs.Add("/Media/Lawn Gnome Rage/lawnGnomeRage5.png");
+            LawnGnomeRage.MediaRefs.Add("/Media/Lawn Gnome Rage/lawnGnomeRage6.png");
+            Design.Add(LawnGnomeRage);
 
             #endregion
 

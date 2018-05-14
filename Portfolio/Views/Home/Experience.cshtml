@@ -1,0 +1,76 @@
+﻿
+<!-- Experience Section -->
+<div id="experience" class="container-fluid text-center">
+    <h2>Experience</h2>
+    <h4>Professional Work</h4>
+    <br>
+    <div class="row">
+        @for (var i = 0; i < Setup.ProfessionalWork.Count; i++)
+        {
+            <div class="col-sm-3">
+                <div class="prj" onclick="DisplayProject('ProfessionalWork', @i);">
+                    <img class="normal" src="@String.Concat(Setup.ProfessionalWork[i].TileRef, ".png")" alt="" title="" max-width="250" max-height="250" />
+                    <img class="onhover" src="@String.Concat(Setup.ProfessionalWork[i].TileRef, "Top.png")" alt="@Setup.ProfessionalWork[i].Name" title="@Setup.ProfessionalWork[i].Name" max-width="250" max-height="250" />
+                </div>
+                <p><strong>@Setup.ProfessionalWork[i].Name</strong></p>
+                <p>@String.Join(", ", Setup.ProfessionalWork[i].SkillList.ToArray())</p>
+            </div>
+        }
+    </div>
+
+    <br><br>
+    <h4>Web Development</h4>
+    <br>
+    <div class="row">
+        @for (var i = 0; i < Setup.WebDevelopment.Count; i++)
+        {
+            <div class="col-sm-3">
+                <div class="prj" onclick="DisplayProject('WebDevelopment', @i);">
+                    <img class="normal" src="@String.Concat(Setup.WebDevelopment[i].TileRef, ".png")" alt="" title="" width="250" height="250" />
+                    <img class="onhover" src="@String.Concat(Setup.WebDevelopment[i].TileRef, "Top.png")" alt="@Setup.WebDevelopment[i].Name" title="@Setup.WebDevelopment[i].Name" width="250" height="250" />
+                </div>
+                <p><strong>@Setup.WebDevelopment[i].Name</strong></p>
+                <p>@String.Join(", ", Setup.WebDevelopment[i].SkillList.ToArray())</p>
+            </div>
+        }
+    </div>
+
+    <br><br>
+    <h4>Application Development</h4>
+    <br>
+    <div class="row">
+        @for (var i = 0; i < Setup.AppDevelopment.Count; i++)
+        {
+            <div class="col-sm-3">
+                <div class="prj" onclick="DisplayProject('AppDevelopment', @i);">
+                    <img class="normal" src="@String.Concat(Setup.AppDevelopment[i].TileRef, ".png")" alt="" title="" width="250" height="250" />
+                    <img class="onhover" src="@String.Concat(Setup.AppDevelopment[i].TileRef, "Top.png")" alt="@Setup.AppDevelopment[i].Name" title="@Setup.AppDevelopment[i].Name" width="250" height="250" />
+                </div>
+                <p><strong>@Setup.AppDevelopment[i].Name</strong></p>
+                <p>@String.Join(", ", Setup.AppDevelopment[i].SkillList.ToArray())</p>
+            </div>
+        }
+    </div>
+
+    <br><br>
+    <h4>Design</h4>
+    <br>
+    <div class="row">
+        @for (var i = 0; i < Setup.Design.Count; i++)
+        {
+            <div class="col-sm-3">
+                <div class="prj" onclick="DisplayProject('Design', @i);">
+                    <img class="normal" src="@String.Concat(Setup.Design[i].TileRef, ".png")" alt="" title="" width="250" height="250" />
+                    <img class="onhover" src="@String.Concat(Setup.Design[i].TileRef, "Top.png")" alt="@Setup.Design[i].Name" title="@Setup.Design[i].Name" width="250" height="250" />
+                </div>
+                <p><strong>@Setup.Design[i].Name</strong></p>
+                <p>@String.Join(", ", Setup.Design[i].SkillList.ToArray())</p>
+            </div>
+        }
+    </div>
+
+    <br><br>
+</div>
+
+<!-- Project Pop up -->
+<div id="projectDisplay" class="container-fluid row"></div>

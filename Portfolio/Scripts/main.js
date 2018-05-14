@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     // Add smooth scrolling to all links in navbar + footer link
-    $(".navbar a, footer a[href='#myPage'] div").on('click', function (event) {
+    $(".navbar a, footer a[href='#top']").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
             // Prevent default anchor click behavior
@@ -36,7 +36,7 @@
 
 function DisplayProject(projectType, projectIndex) {
     var display = document.getElementById('projectDisplay');
-    display.innerHTML = "<div id='myCarousel' class='carousel slide col-sm-6' data-ride='carousel'><!--Indicators--><ol id='projCarouselInds' class='carousel-indicators'><li data-target='#myCarousel' data-slide-to='0' class=active'></li></ol><!--Wrapper for slides--><div id='projMedia' class='carousel-inner' role='listbox'><div class='item active'></div></div><!--Left and right controls--><a class='left carousel-control' href='#myCarousel' role='button' data-slide='prev'><span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span><span class='sr-only'>Previous</span></a><a class='right carousel-control' href='#myCarousel' role='button' data-slide='next'><span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span><span class='sr-only'>Next</span></a></div ><div id='projDetails' class='col-sm-6'></div>";
+    display.innerHTML = "<div id='myCarousel' class='carousel slide col-sm-6' data-ride='carousel'><!--Indicators--><ol id='projCarouselInds' class='carousel-indicators'><li data-target='#myCarousel' data-slide-to='0' class=active'></li></ol><!--Wrapper for slides--><div id='projMedia' class='carousel-inner text-center' role='listbox'><div class='item active'></div></div><!--Left and right controls--><a class='left carousel-control' href='#myCarousel' role='button' data-slide='prev'><span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span><span class='sr-only'>Previous</span></a><a class='right carousel-control' href='#myCarousel' role='button' data-slide='next'><span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span><span class='sr-only'>Next</span></a></div ><div id='projDetails' class='col-sm-6 slide'></div>";
     display.style.display = 'block';
 
     document.body.scroll = "no";
@@ -82,9 +82,7 @@ function DisplayProject(projectType, projectIndex) {
             displayInnerHTML = '<h4>' + projArray[0] + '</h4><p>' + projArray[1] + '</p>';
             document.getElementById('projDetails').innerHTML = displayInnerHTML;
 
-
-            display.style.marginTop = ((window.innerHeight - display.getBoundingClientRect().height) / 2) + "px";
-            //display.style.left = (document.width - display.getBoundingClientRect().width / 2) + "px";
+            //display.style.marginTop = ((window.innerHeight - display.getBoundingClientRect().height) / 2) + "px";
         },
         error: function (xhr, status, error) {
             alert(error);
@@ -99,5 +97,4 @@ function CloseProject() {
     document.getElementById("projectDisplay").style.display = "none";
     document.getElementById("projectDisplay").innerHTML = "";
     document.getElementById("fade").style.display = "none";
-    //SetupProjectDisplay();
 }

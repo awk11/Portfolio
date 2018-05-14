@@ -1,29 +1,12 @@
-﻿body {
-
-}
-
-/* Set padding to keep content from hitting the edges */
-.body-content {
+﻿.body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
 .dl-horizontal dt {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
-
-
-/*Company Template*/
 body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
@@ -51,6 +34,7 @@ h4 {
     color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
 }
 
 .container-fluid {
@@ -86,12 +70,13 @@ h4 {
 #projectDisplay {
     display: none;
     position: fixed;
-    top: 0;
+    top: 50%;
     left: 0;
     padding: 0;
     margin: auto;
     z-index: 10001;
-    overflow: auto;
+    overflow: hidden;
+    transform: translateY(-50%);
 }
 
 #fade {
@@ -103,13 +88,14 @@ h4 {
     height: 100%;
     background-color: black;
     z-index: 10000;
-    -moz-opacity: 0.7;
-    opacity: .70;
-    filter: alpha(opacity=70);
+    -moz-opacity: 0.90;
+    opacity: .90;
+    filter: alpha(opacity=90);
 }
 
-#projDetails{
+#projDetails {
     float: right;
+    overflow: auto;
 }
 
     #projDetails > h4, #projDetails > p {
@@ -118,12 +104,13 @@ h4 {
 
 #myCarousel {
     float: left;
-    width: 50%;
 }
 
 .carousel-control.right, .carousel-control.left {
     background-image: none;
     color: #19aae0;
+    top: 100px;
+    bottom: 100px;
 }
 
 .carousel-indicators{
@@ -314,6 +301,10 @@ footer .glyphicon {
     .btn-lg {
         width: 100%;
         margin-bottom: 35px;
+    }
+
+    #projDisplay {
+        overflow: auto;
     }
 }
 
