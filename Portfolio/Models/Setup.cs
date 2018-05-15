@@ -23,17 +23,19 @@ namespace Portfolio
             #region Professional Work Projects Setup
             ProfessionalWork = new List<Project>();
 
-            Project GEICO = new Project("GEICO", "/Media/Tiles/forcePong","TBD");
+            Project GEICO = new Project("GEICO", "/Media/Tiles/geico", "I began work at GEICO in June of 2017 as part of their rotational entry level hiring program they call the Technology Development Program, with my first assignment being to the Claims Department. Since joining, my responsibilities have primarily focused around the development of a .NET internal web application, which acts as a portal that can house web based automation tools used throughout the Claims department at the company. I am the lead on this project and have acted as the primary developer from conception to production. In working on this project, some of the things I've done are: </p><ul><li>Implement a fully functioning login system that works with an internal network</li><li>Create a custom logging system</li><li> Work with security and encrypting sensitive data that passes through the application</li><li>Write and maintain in depth documentation</li><li>Work with a variety of teams across the Claims department as well as the company at large to both get the application up and running and on requested features and tools</li><li>Design a code architecture such that new features can be easily implemented by others in the future who are not familiar with .NET or MVC frameworks</li></ul><p>Some of the technologies this project involved using include the .NET MVC framework, working with Active Directory, connecting to external SQL Databases, etc.<br /><br />I am also the primary developer supporting a legacy VB Windows Forms application used by the SIU (Special Investigative Unit) to manage and track claim cases. Unfortunately I can't show any pictures of my work as they are internal applications.<br /><br />Outside of my primary responsibilities, I have gone through extensive training courses in topics ranging from .NET to DevOps and Agile. I started at GEICO with the title of Programmer Analyst 2 and have since been promoted to Programmer Analyst 3.");
             GEICO.SkillList.Add("Full-Time");
             GEICO.SkillList.Add(".NET");
             GEICO.SkillList.Add("C#");
             GEICO.SkillList.Add("HTML/CSS");
             GEICO.SkillList.Add("JavaScript");
-            GEICO.MediaRefs.Add("https://placehold.it/150x80?text=IMAGE");
-            GEICO.MediaRefs.Add("https://placehold.it/150x80?text=IMAGE");
+            GEICO.SkillList.Add("Visual Studio");
+            GEICO.SkillList.Add("JIRA");
+            GEICO.SkillList.Add("Team Foundation Server");
+            GEICO.MediaRefs.Add("/Media/GEICO/Geico.jpg");
             ProfessionalWork.Add(GEICO);
 
-            Project EF = new Project("EF - Go Ahead Tours", "/Media/Tiles/goAhead", "From September of 2016 to January of 2017, I worked at Education First on the Go Ahead Tours team as an iOS mobile developer.My work included a variety of work on updating and better optimizing the Go Ahead Tours Companion App, which <a href = 'https://itunes.apple.com/us/app/go-ahead-tour-companion/id870744208?mt=8' target = '_blank'> can be found here </a>.I did a lot of front end work, updating the app to its new 2.1 design.Some of the app views I implemented include the itinerary day views, the insurance / travel protection view, the payments view, among a host of other features.The pictures above are all views within the app that I either made from scratch or completely redesigned from the ground up, but not a complete collection of everything I worked on.<br><br><a href = 'http://www.goaheadtours.com/' target = '_blank'> More information about Go Ahead Tours can be found here </a>");
+            Project EF = new Project("EF - Go Ahead Tours", "/Media/Tiles/goAhead", "From September of 2016 to January of 2017, I worked at Education First on the Go Ahead Tours team as an iOS mobile developer. My responsibilities included updating and better optimizing the Go Ahead Tours Companion App, which <a href = 'https://itunes.apple.com/us/app/go-ahead-tour-companion/id870744208?mt=8' target = '_blank'> can be found here</a>. I did a lot of front end work, updating the app to its new 2.1 design. Some of the app views I implemented include the itinerary day views, the insurance/travel protection view, the payments view, among a host of other features. These pictures are all views within the app that I either made from scratch or completely recreated from the ground up working with a design team, but not a complete collection of everything I worked on.<br><br><a href = 'http://www.goaheadtours.com/' target = '_blank'>More information about Go Ahead Tours can be found here.</a>");
             EF.SkillList.Add("Internship");
             EF.SkillList.Add("iOS Development");
             EF.SkillList.Add("Swift");
@@ -49,7 +51,7 @@ namespace Portfolio
             EF.MediaRefs.Add("/Media/EF/gat9.png");
             ProfessionalWork.Add(EF);
 
-            Project VeriPAD = new Project("VeriPAD", "/Media/Tiles/veripad", "Over the summer of 2016 I interned at a start-up company named <a href='http://www.veripad.org' target='_blank'>VeriPAD</a> as a software developer. VeriPAD is a newly formed company that is committed to addressing the epidemic of conterfeit medications in low income communities and countries across the world. My role at the company was designing and implementing computer vision algorithms for an andriod mobile app that will help users identify the validity of a medication based on a chemical test slip that accurately distinguishes properties of the medications chemical makeup.");
+            Project VeriPAD = new Project("VeriPAD", "/Media/Tiles/veripad", "Over the summer of 2016 I interned at a start-up company named <a href='http://www.veripad.org' target='_blank'>VeriPAD</a> as a software developer. VeriPAD is a newly formed company that is committed to addressing the epidemic of counterfeit medications in low income communities and countries across the world. My role at the company was designing and implementing computer vision algorithms for an Andriod mobile app that will help users identify the validity of a medication based on a chemical test slip that accurately distinguishes properties of the medication's chemical makeup.");
             VeriPAD.SkillList.Add("Internship");
             VeriPAD.SkillList.Add("Computer Vision (OpenCV)");
             VeriPAD.SkillList.Add("Android");
@@ -89,7 +91,7 @@ namespace Portfolio
             Project Asteroids = new Project("Asteroids", "/Media/Tiles/asteroids", "This was an in class assignment made in java's processing API. For this project, I decided to take a new spin on asteroids by making it Halo themed (the famous video game franchise). This required the use of game physics as well as animation programming. The game has music as well as menus, and is basically a customized asteroids clone.");
             Asteroids.SkillList.Add("Game Development");
             Asteroids.SkillList.Add("Java/Processing API");
-            Asteroids.MediaRefs.Add("/Media/Asteroids/asteroids.mp4");
+            Asteroids.MediaRefs.Add("https://www.youtube.com/embed/53WRD4HFsus");
             Asteroids.MediaRefs.Add("/Media/Asteroids/asteroids.png");
             AppDevelopment.Add(Asteroids);
 
@@ -109,7 +111,7 @@ namespace Portfolio
             AppDevelopment.Add(DuelingGrounds);
 
             Project ForcePong = new Project("Force Pong", "/Media/Tiles/forcePong", "For this project, I was assigned as part of a small team, to make a game using OpengGL. So ultimately we decided to make a simple pong game, but with the twist of being able to control the ball while its moving across the screen. Both players can move it in both directions and it's actually a lot of fun.For this project, I worked on implementing the controls as well as all of the physics programming and collisions. The github can be viewed<a href='https://github.com/Raccoon-Studios/Main-Game' target='_blank'>here</a>");
-            ForcePong.SkillList.Add("Graphocs Programming");
+            ForcePong.SkillList.Add("Graphics Programming");
             ForcePong.SkillList.Add("OpenGL");
             ForcePong.SkillList.Add("C++");
             ForcePong.MediaRefs.Add("/Media/Force Pong/forcePong.mp4");
@@ -163,17 +165,17 @@ namespace Portfolio
             GOLNet.MediaRefs.Add("/Media/Game of Life (NET)/c-gol4.png");
             WebDevelopment.Add(GOLNet);
 
-            Project Portfolio = new Project("Portfolio (this)", "/Media/Tiles/c-gol", "TBD");
+            Project Portfolio = new Project("Portfolio", "/Media/Tiles/portfolio", "This website is set up using a .NET MVC framework. Setting this up took a few days, using my background knowledge in C#, .NET, javascript, and HTML5/CSS3. I took inspiration for the design from some of the samples on <a href='https://www.w3schools.com' target='_blank'>w3schools.com</a>, but for the most part made it my own, incorporating different elements from a few of the themes they have made available for open use. As for the back end, I chose to set it up using .NET so I could have a dynamic layout in regards to the experience section. Each of these projects is set up as an object on the back end, which is then grabbed and displayed dynamically. The code is available on my Github <a href='https://github.com/awk11/Portfolio' target='_blank'>here</a>.");
             Portfolio.SkillList.Add(".NET");
             Portfolio.SkillList.Add("C#");
             Portfolio.SkillList.Add("HTML/CSS");
             Portfolio.SkillList.Add("JavaScript");
             Portfolio.SkillList.Add("Azure");
             Portfolio.SkillList.Add("Model View Controller Architecture");
-            Portfolio.MediaRefs.Add("/Media/Portfolio/portfolio.png");
+            Portfolio.MediaRefs.Add("/Media/Portfolio/portfolio1.png");
             WebDevelopment.Add(Portfolio);
 
-            Project Vehicles = new Project("Vehicles Demo", "/Media/Tiles/vehicles", "For this project, I implemented an interactive simulation of braitenburg vehicles. There is one vehicle that is atracted to the light sources, and one that is repeled by them.As they move along the screen, they draw a trail of their path.Over time this can be used to create very interesting abstract art peices, and can be influneced by dragging the lights around with the mouse cursor.The user can also customize alot about the simulation, including the colors of the vehicles and their trails, the brightness of each individual light, as well as even add new lights to the simulation. The user can also increase or decrease the background brightness of the simulation, and toggle off the vehicles an dlight sources so they can focus on viewing the trails as they're created. There isnt much to this project, but it's a very unique and interesting experience to play around with. <a href = 'https://people.rit.edu/~awk9293/CompAesthetics/project2.html' target= '_blank' >It can be viewed here.</a>");
+            Project Vehicles = new Project("Vehicles Demo", "/Media/Tiles/vehicles", "For this project, I implemented an interactive simulation of Braitenburg vehicles. There is one vehicle that is attracted to the light sources, and one that is repelled by them. As they move along the screen, they draw a trail of their path. Over time this can be used to create very interesting abstract art pieces, and can be influenced by dragging the lights around with the mouse cursor. The user can also customize a lot about the simulation, including the colors of the vehicles and their trails, the brightness of each individual light, as well as even add new lights to the simulation. The user can also increase or decrease the background brightness of the simulation, and toggle off the vehicles and light sources so they can focus on viewing the trails as they're created. There isn't much to this project, but it's a very unique and interesting experience to play around with. <a href = 'https://people.rit.edu/~awk9293/CompAesthetics/project2.html' target= '_blank' >It can be viewed here.</a>");
             Vehicles.SkillList.Add("Braitenburg Vehicles");
             Vehicles.SkillList.Add("JavaScript");
             Vehicles.SkillList.Add("Canvas");
@@ -184,7 +186,7 @@ namespace Portfolio
             Vehicles.MediaRefs.Add("/Media/Vehicles/vehicles5.png");
             WebDevelopment.Add(Vehicles);
 
-            Project Audio = new Project("Audio Visualizer", "/Media/Tiles/audioVisualizer", "This project is a visualizer for audio that is played through the page. I can't include too many songs, because copyright, but basically what it does is takes data from the audio thats playing, and alters the image on the screen based on that.There are a lot of different options for how you can customize the experience, which are accessed by hitting the square in the top right corner.<a href='https://people.rit.edu/~awk9293/330/audioproject.html' target='_blank'> You can play around with it yourself here.</a>");
+            Project Audio = new Project("Audio Visualizer", "/Media/Tiles/audioVisualizer", "This project is a visualizer for audio that is played through the page. I can't include too many songs because of copyright, but basically what it does is takes data from the audio that's playing, and alters the image on the screen based on that. There are a lot of different options for how you can customize the experience, which are accessed by hitting the square in the top right corner.<a href='https://people.rit.edu/~awk9293/330/audioproject.html' target='_blank'> You can play around with it yourself here.</a>");
             Audio.SkillList.Add("Web Audio API");
             Audio.SkillList.Add("JavaScript");
             Audio.SkillList.Add("Canvas");

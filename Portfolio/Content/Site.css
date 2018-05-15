@@ -98,7 +98,7 @@ h4 {
     overflow: auto;
 }
 
-    #projDetails > h4, #projDetails > p {
+    #projDetails > h4, #projDetails > p, #projDetails > ul{
         color: white !important;
     }
 

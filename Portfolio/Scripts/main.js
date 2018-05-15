@@ -64,6 +64,9 @@ function DisplayProject(projectType, projectIndex) {
                 if (projArray[i].includes('mp4')) {
                     displayInnerHTML += '<video controls><source src="' + projArray[i] + '" type="video/mp4">Your browser does not support the video tag. Sorry about that! Please try again in a more modern browser.</video></div>';
                 }
+                else if (projArray[i].includes('http')) {
+                    displayInnerHTML += '<iframe width="650" height="360" src="' + projArray[i] + '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>'
+                }
                 else {
                     displayInnerHTML += '<img src="' + projArray[i] + '" /></div>';
                 }
@@ -90,7 +93,8 @@ function DisplayProject(projectType, projectIndex) {
     });
 }
 
-function CloseProject() {
+function CloseProject(e) {
+    if (e.target.id !== 'fade' && e.target.id !== 'projectDisplay') return;
     document.body.scroll = "yes";
     document.body.style.overflow = "scroll";
 

@@ -200,6 +200,7 @@
     <Content Include="Media\Game of Life %28Node%29\c-gol2.png" />
     <Content Include="Media\Game of Life %28Node%29\c-gol3.png" />
     <Content Include="Media\Game of Life %28Node%29\c-gol4.png" />
+    <Content Include="Media\GEICO\Geico.jpg" />
     <Content Include="Media\Lawn Gnome Rage\lawnGnomeRage0.png" />
     <Content Include="Media\Lawn Gnome Rage\lawnGnomeRage1.png" />
     <Content Include="Media\Lawn Gnome Rage\lawnGnomeRage2.png" />
@@ -214,6 +215,7 @@
     <Content Include="Media\Lively\lively4.png" />
     <Content Include="Media\Lively\lively5.png" />
     <Content Include="Media\Lively\lively6.png" />
+    <Content Include="Media\Portfolio\portfolio1.png" />
     <Content Include="Media\Spider Web\spiderweb.mp4" />
     <Content Include="Media\Spider Web\spiderweb.png" />
     <Content Include="Media\Tiles\aiwarzone.png" />
@@ -234,12 +236,14 @@
     <Content Include="Media\Tiles\duelingGroundsTop.png" />
     <Content Include="Media\Tiles\forcePong.png" />
     <Content Include="Media\Tiles\forcePongTop.png" />
+    <Content Include="Media\Tiles\geico.png" />
     <Content Include="Media\Tiles\goAhead.png" />
     <Content Include="Media\Tiles\goAheadTop.png" />
     <Content Include="Media\Tiles\lawnGnomeRage.png" />
     <Content Include="Media\Tiles\lawnGnomeRageTop.png" />
     <Content Include="Media\Tiles\lively.png" />
     <Content Include="Media\Tiles\livelyTop.png" />
+    <Content Include="Media\Tiles\portfolio.png" />
     <Content Include="Media\Tiles\spiderweb.png" />
     <Content Include="Media\Tiles\spiderwebTop.png" />
     <Content Include="Media\Tiles\vehicles.png" />
@@ -258,6 +262,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Media\Tiles\tile.psd" />
+    <None Include="Properties\PublishProfiles\AdamKaufman - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -288,7 +293,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Media\Game of Life %28NET%29\" />
-    <Folder Include="Media\GEICO\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
