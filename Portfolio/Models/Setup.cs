@@ -150,7 +150,7 @@ namespace Portfolio
             CGOLNode.MediaRefs.Add("/Media/Game of Life (Node)/c-gol4.png");
             WebDevelopment.Add(CGOLNode);
 
-            Project GOLNet = new Project("A-GOL", "/Media/Tiles/c-gol", "TBD");
+            Project GOLNet = new Project("A-GOL", "/Media/Tiles/c-gol", "In an effort to demonstate my .NET skillset, I spent a couple of days taking the C-GOL project I had completed in college using Node.js and converting it to be .NET based. From the user perspective there isn't much difference between the two versions, but looking at how things are organized in the back end there are quite a few. One of the bigger differences for example is how saved simulations are stored and organized. In this .NET version, simulations are tied to account database entries, rather than simulation saves being saved in a seperate table with a reference to the account it's tied to.<br /><br />The codebase for this version is available on my github <a href='https://github.com/awk11/A-GOL'>here</a>. A live verion of the application can be seen at <a href='https://a-gol.azurewebsites.net'>a-gol.azurewebsites.net</a>");
             GOLNet.SkillList.Add(".NET");
             GOLNet.SkillList.Add("C#");
             GOLNet.SkillList.Add("JavaScript");

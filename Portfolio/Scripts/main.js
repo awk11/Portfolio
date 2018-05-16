@@ -84,8 +84,6 @@ function DisplayProject(projectType, projectIndex) {
 
             displayInnerHTML = '<h4>' + projArray[0] + '</h4><p>' + projArray[1] + '</p>';
             document.getElementById('projDetails').innerHTML = displayInnerHTML;
-
-            //display.style.marginTop = ((window.innerHeight - display.getBoundingClientRect().height) / 2) + "px";
         },
         error: function (xhr, status, error) {
             alert(error);
