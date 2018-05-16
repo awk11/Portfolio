@@ -196,6 +196,10 @@
     <Content Include="Media\EF\gat9.png" />
     <Content Include="Media\Force Pong\forcePong.mp4" />
     <Content Include="Media\Force Pong\forcePong.png" />
+    <Content Include="Media\Game of Life %28NET%29\a-gol1.png" />
+    <Content Include="Media\Game of Life %28NET%29\a-gol2.png" />
+    <Content Include="Media\Game of Life %28NET%29\a-gol3.png" />
+    <Content Include="Media\Game of Life %28NET%29\a-gol4.png" />
     <Content Include="Media\Game of Life %28Node%29\c-gol1.png" />
     <Content Include="Media\Game of Life %28Node%29\c-gol2.png" />
     <Content Include="Media\Game of Life %28Node%29\c-gol3.png" />
@@ -218,6 +222,8 @@
     <Content Include="Media\Portfolio\portfolio1.png" />
     <Content Include="Media\Spider Web\spiderweb.mp4" />
     <Content Include="Media\Spider Web\spiderweb.png" />
+    <Content Include="Media\Tiles\a-gol.png" />
+    <Content Include="Media\Tiles\a-golTop.png" />
     <Content Include="Media\Tiles\aiwarzone.png" />
     <Content Include="Media\Tiles\aiwarzoneTop.png" />
     <Content Include="Media\Tiles\asteroids.png" />
@@ -237,6 +243,7 @@
     <Content Include="Media\Tiles\forcePong.png" />
     <Content Include="Media\Tiles\forcePongTop.png" />
     <Content Include="Media\Tiles\geico.png" />
+    <Content Include="Media\Tiles\geicoTop.png" />
     <Content Include="Media\Tiles\goAhead.png" />
     <Content Include="Media\Tiles\goAheadTop.png" />
     <Content Include="Media\Tiles\lawnGnomeRage.png" />
@@ -244,6 +251,7 @@
     <Content Include="Media\Tiles\lively.png" />
     <Content Include="Media\Tiles\livelyTop.png" />
     <Content Include="Media\Tiles\portfolio.png" />
+    <Content Include="Media\Tiles\portfolioTop.png" />
     <Content Include="Media\Tiles\spiderweb.png" />
     <Content Include="Media\Tiles\spiderwebTop.png" />
     <Content Include="Media\Tiles\vehicles.png" />
@@ -292,7 +300,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Media\Game of Life %28NET%29\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

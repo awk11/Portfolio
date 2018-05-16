@@ -150,7 +150,7 @@ namespace Portfolio
             CGOLNode.MediaRefs.Add("/Media/Game of Life (Node)/c-gol4.png");
             WebDevelopment.Add(CGOLNode);
 
-            Project GOLNet = new Project("A-GOL", "/Media/Tiles/c-gol", "In an effort to demonstate my .NET skillset, I spent a couple of days taking the C-GOL project I had completed in college using Node.js and converting it to be .NET based. From the user perspective there isn't much difference between the two versions, but looking at how things are organized in the back end there are quite a few. One of the bigger differences for example is how saved simulations are stored and organized. In this .NET version, simulations are tied to account database entries, rather than simulation saves being saved in a seperate table with a reference to the account it's tied to.<br /><br />The codebase for this version is available on my github <a href='https://github.com/awk11/A-GOL'>here</a>. A live verion of the application can be seen at <a href='https://a-gol.azurewebsites.net'>a-gol.azurewebsites.net</a>");
+            Project GOLNet = new Project("A-GOL", "/Media/Tiles/a-gol", "In an effort to demonstate my .NET skillset, I spent a couple of days taking the C-GOL project I had completed in college using Node.js and converting it to be .NET based. From the user perspective there isn't much difference between the two versions, but looking at how things are organized in the back end there are quite a few. One of the bigger differences for example is how saved simulations are stored and organized. In this .NET version, simulations are tied to account database entries, rather than simulation saves being saved in a seperate table with a reference to the account it's tied to.<br /><br />The codebase for this version is available on my github <a href='https://github.com/awk11/A-GOL'>here</a>. A live verion of the application can be seen at <a href='https://a-gol.azurewebsites.net'>a-gol.azurewebsites.net</a>");
             GOLNet.SkillList.Add(".NET");
             GOLNet.SkillList.Add("C#");
             GOLNet.SkillList.Add("JavaScript");
@@ -159,10 +159,10 @@ namespace Portfolio
             GOLNet.SkillList.Add("Game Theory (CS Topic)");
             GOLNet.SkillList.Add("Azure");
             GOLNet.SkillList.Add("Model View Controller Architecture");
-            GOLNet.MediaRefs.Add("/Media/Game of Life (NET)/c-gol1.png");
-            GOLNet.MediaRefs.Add("/Media/Game of Life (NET)/c-gol2.png");
-            GOLNet.MediaRefs.Add("/Media/Game of Life (NET)/c-gol3.png");
-            GOLNet.MediaRefs.Add("/Media/Game of Life (NET)/c-gol4.png");
+            GOLNet.MediaRefs.Add("/Media/Game of Life (NET)/a-gol1.png");
+            GOLNet.MediaRefs.Add("/Media/Game of Life (NET)/a-gol2.png");
+            GOLNet.MediaRefs.Add("/Media/Game of Life (NET)/a-gol3.png");
+            GOLNet.MediaRefs.Add("/Media/Game of Life (NET)/a-gol4.png");
             WebDevelopment.Add(GOLNet);
 
             Project Portfolio = new Project("Portfolio", "/Media/Tiles/portfolio", "This website is set up using a .NET MVC framework. Setting this up took a few days, using my background knowledge in C#, .NET, javascript, and HTML5/CSS3. I took inspiration for the design from some of the samples on <a href='https://www.w3schools.com' target='_blank'>w3schools.com</a>, but for the most part made it my own, incorporating different elements from a few of the themes they have made available for open use. As for the back end, I chose to set it up using .NET so I could have a dynamic layout in regards to the experience section. Each of these projects is set up as an object on the back end, which is then grabbed and displayed dynamically. The code is available on my Github <a href='https://github.com/awk11/Portfolio' target='_blank'>here</a>.");
