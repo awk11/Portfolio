@@ -1,13 +1,4 @@
-﻿.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.dl-horizontal dt {
-    white-space: normal;
-}
-
-body {
+﻿body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
@@ -45,31 +36,10 @@ h4 {
     background-color: #f6f6f6;
 }
 
-.logo-small {
-    color: #19aae0;
-    font-size: 50px;
-}
-
-.logo {
-    color: #19aae0;
-    font-size: 200px;
-}
-
-.thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-}
-
-    .thumbnail img {
-        width: 100%;
-        height: 100%;
-        margin-bottom: 10px;
-    }
-
 #projectDisplay {
     display: none;
     position: fixed;
+    width: 100%;
     top: 50%;
     left: 0;
     padding: 0;
@@ -125,67 +95,15 @@ h4 {
         background-color: #19aae0;
     }
 
-.item img, video {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
+.carousel-inner .item img, video {
     margin-left: auto;
     margin-right: auto;
     margin: 25px auto;
     text-align: center;
-    max-width: 600px !important;
-    max-height: 600px !important;
+    max-width: 600px;
+    max-height: 600px;
+    cursor: pointer;
 }
-
-.item span {
-    font-style: normal;
-}
-
-.panel {
-    border: 1px solid #19aae0;
-    border-radius: 0 !important;
-    transition: box-shadow 0.5s;
-}
-
-    .panel:hover {
-        box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-    }
-
-.panel-footer .btn:hover {
-    border: 1px solid #19aae0;
-    background-color: #fff !important;
-    color: #19aae0;
-}
-
-.panel-heading {
-    color: #fff !important;
-    background-color: #19aae0 !important;
-    padding: 25px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-
-.panel-footer {
-    background-color: white !important;
-}
-
-    .panel-footer h3 {
-        font-size: 32px;
-    }
-
-    .panel-footer h4 {
-        color: #aaa;
-        font-size: 14px;
-    }
-
-    .panel-footer .btn {
-        margin: 15px 0;
-        background-color: #19aae0;
-        color: #fff;
-    }
 
 .navbar {
     margin-bottom: 0;
@@ -309,7 +227,7 @@ footer .glyphicon {
 }
 
 @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
+    #projDisplay {
+        overflow: scroll;
     }
 }

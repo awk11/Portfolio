@@ -1,7 +1,7 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    // The primary page for the portfolio
 }
-
+<!--Navigation Bar-->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -29,13 +29,15 @@
     <img src="~/Media/AdamK.jpg" class="img-responsive img-circle" style="display:inline" alt="Adam Kaufman (me)" width="350" height="350">
 </div>
 
+@*Body Content*@
 @Html.Partial("About")
 @Html.Partial("Experience")
 @Html.Partial("Resume")
 
+@*Footer Section*@
 <footer class="container-fluid text-center">
     <a href="#top" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
-    <p>&copy; Made by Adam Kaufman. Last updated on May 16<sup>th</sup>, 2018</p>
+    <p>&copy; Made by Adam Kaufman. Last updated on May 18<sup>th</sup>, 2018</p>
 </footer>
