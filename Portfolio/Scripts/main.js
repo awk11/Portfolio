@@ -31,7 +31,7 @@
             }
         });
     });
-})
+});
 
 
 // Shows the project display
@@ -65,13 +65,13 @@ function DisplayProject(projectType, projectIndex) {
             var displayInnerHTML = '';
             for (var i = 2; i < projArray.length; i++) {
                 displayInnerHTML += '<div class="item ';
-                if (i == 2) displayInnerHTML += 'active';
+                if (i === 2) displayInnerHTML += 'active';
                 displayInnerHTML += '" onclick="MediaZoom();">';
                 if (projArray[i].includes('mp4')) {
                     displayInnerHTML += '<video controls><source src="' + projArray[i] + '" type="video/mp4">Your browser does not support the video tag. Sorry about that! Please try again in a more modern browser.</video></div>';
                 }
                 else if (projArray[i].includes('http')) {
-                    displayInnerHTML += '<iframe width="650" height="360" src="' + projArray[i] + '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>'
+                    displayInnerHTML += '<iframe width="650" height="360" src="' + projArray[i] + '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>';
                 }
                 else {
                     displayInnerHTML += '<img src="' + projArray[i] + '" /></div>';
@@ -84,7 +84,7 @@ function DisplayProject(projectType, projectIndex) {
             displayInnerHTML = '';
             for (var i = 0; i < projArray.length - 2; i++) {
                 displayInnerHTML += '<li data-target="#myCarousel" data-slide-to="' + i + '"';
-                if (i == 0) displayInnerHTML += 'class="active" ';
+                if (i === 0) displayInnerHTML += 'class="active" ';
                 displayInnerHTML += '></li > ';
             }
             indicators.innerHTML = displayInnerHTML;
@@ -114,7 +114,7 @@ function CloseProject(e) {
 function MediaZoom() {
     var projDetails = document.getElementById('projDetails');
     // If not zoomed in already
-    if (projDetails.style.display != "none") {
+    if (projDetails.style.display !== "none") {
         // Sets up all the necessary css to allow for the media images to be focused on
         projDetails.style.display = "none";
         var items = document.getElementsByClassName('item');

@@ -12,6 +12,7 @@ namespace Portfolio.Controllers
         public ActionResult Index()
         {
             Setup.Initialize();
+            ViewBag.Title = "Adam Kaufman's Portfolio";
             return View();
         }
 

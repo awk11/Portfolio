@@ -142,7 +142,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AudioVisualizerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\VehiclesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -283,6 +285,19 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\Vehicles\dat.gui.js" />
+    <Content Include="Scripts\Vehicles\light.js" />
+    <Content Include="Scripts\Vehicles\main.js" />
+    <None Include="Views\Vehicles\index.cshtml" />
+    <Content Include="Scripts\Vehicles\vehicle.js" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\artwork\logo.png" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\artwork\logo.svg" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\artwork\logo_workfiles.svg" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\build\victor.js" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\build\victor.min.js" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\index.js" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\test.txt" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\test\victor.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -297,9 +312,19 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Experience.cshtml" />
     <Content Include="Views\Home\Resume.cshtml" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\.editorconfig" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\.gitignore" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\.npmignore" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\.travis.yml" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\bower.json" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\documentation\api.md" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\LICENSE" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\package.json" />
+    <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\AudioVisualizer\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

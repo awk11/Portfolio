@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<style>
+		#topCanvas {
+			display: block;
+			position: absolute;
+			background: rgba(0,0,0,0);
+			margin-top: -8px;
+			margin-left: -8px;
+		}
+		
+		
+		#drawCanvas {
+			display: block;
+			position: absolute;
+			background: rgba(255,255,255,.1);
+			margin-top: -8px;
+			margin-left: -8px;
+		}
+		
+		body{
+			background: gray;
+		}
+	</style>
+</head>
+<body>
+    <canvas id='drawCanvas'>Get a real browser!</canvas>
+    <canvas id='topCanvas'>Get a real browser!</canvas>
+
+    @Scripts.Render("~/Scripts/Vehicles/victor-1.1.0/victor-1.1.0/build/victor.js")
+    @Scripts.Render("~/Scripts/Vehicles/dat.gui.js")
+    @Scripts.Render("~/Scripts/Vehicles/vehicle.js")
+    @Scripts.Render("~/Scripts/Vehicles/light.js")
+    @Scripts.Render("~/Scripts/Vehicles/main.js")
+</body>
+</html>
