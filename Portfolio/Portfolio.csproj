@@ -142,7 +142,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AudioVisualizerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\VehiclesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -288,7 +287,7 @@
     <Content Include="Scripts\Vehicles\dat.gui.js" />
     <Content Include="Scripts\Vehicles\light.js" />
     <Content Include="Scripts\Vehicles\main.js" />
-    <None Include="Views\Vehicles\index.cshtml" />
+    <None Include="Views\Vehicles\Index.cshtml" />
     <Content Include="Scripts\Vehicles\vehicle.js" />
     <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\artwork\logo.png" />
     <Content Include="Scripts\Vehicles\victor-1.1.0\victor-1.1.0\artwork\logo.svg" />
@@ -324,7 +323,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\AudioVisualizer\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
