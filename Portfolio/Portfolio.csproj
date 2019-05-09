@@ -220,6 +220,9 @@
     <Content Include="Media\Lively\lively4.png" />
     <Content Include="Media\Lively\lively5.png" />
     <Content Include="Media\Lively\lively6.png" />
+    <Content Include="Media\Modis\dhs.jpg" />
+    <Content Include="Media\Modis\modis.jpg" />
+    <Content Include="Media\Modis\unisys.jpg" />
     <Content Include="Media\Portfolio\portfolio1.png" />
     <Content Include="Media\Spider Web\spiderweb.mp4" />
     <Content Include="Media\Spider Web\spiderweb.png" />
@@ -251,6 +254,8 @@
     <Content Include="Media\Tiles\lawnGnomeRageTop.png" />
     <Content Include="Media\Tiles\lively.png" />
     <Content Include="Media\Tiles\livelyTop.png" />
+    <Content Include="Media\Tiles\modis.png" />
+    <Content Include="Media\Tiles\modisTop.png" />
     <Content Include="Media\Tiles\portfolio.png" />
     <Content Include="Media\Tiles\portfolioTop.png" />
     <Content Include="Media\Tiles\spiderweb.png" />
