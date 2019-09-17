@@ -23,7 +23,7 @@ namespace Portfolio
             #region Professional Work Projects Setup
             ProfessionalWork = new List<Project>();
 
-            Project Modis = new Project("Modis/Unisys/DHS", "/Media/Tiles/modis", "I'm currently working as a software development contractor at Unisys, where I am part of the LBI/ITI Team. I do full stack work on various applications related to contracts with the US DHS/CBP. This is a Public Trust position, and I am going through a background investigation currently to obtain my public trust with the DHS.");
+            Project Modis = new Project("Modis/Unisys/DHS", "/Media/Tiles/modis", "I'm currently working as a software development contractor at Unisys, where I am part of the LBI/ITI Team. I do full stack work on various applications related to contracts with the US DHS/CBP, ranging from bug fixing to concepting to deployment. This is a Public Trust position, and I am going through a background investigation currently to obtain my public trust with the DHS.");
             Modis.SkillList.Add("Full-Time");
             Modis.SkillList.Add("Vue.js");
             Modis.SkillList.Add("JavaScript");
@@ -32,7 +32,9 @@ namespace Portfolio
             Modis.SkillList.Add("HTML/CSS");
             Modis.SkillList.Add("Visual Studio");
             Modis.SkillList.Add("JIRA");
-            Modis.SkillList.Add("Team Foundation Server");
+            Modis.SkillList.Add("Docker");
+            Modis.SkillList.Add("Linux");
+            Modis.SkillList.Add("Microsoft TFS");
             Modis.SkillList.Add("Agile");
             Modis.MediaRefs.Add("/Media/Modis/dhs.jpg");
             Modis.MediaRefs.Add("/Media/Modis/modis.jpg");
@@ -47,7 +49,7 @@ namespace Portfolio
             GEICO.SkillList.Add("JavaScript");
             GEICO.SkillList.Add("Visual Studio");
             GEICO.SkillList.Add("JIRA");
-            GEICO.SkillList.Add("Team Foundation Server");
+            GEICO.SkillList.Add("Microsoft TFS");
             GEICO.SkillList.Add("Agile");
             GEICO.MediaRefs.Add("/Media/GEICO/Geico.jpg");
             ProfessionalWork.Add(GEICO);
@@ -57,6 +59,7 @@ namespace Portfolio
             EF.SkillList.Add("iOS Development");
             EF.SkillList.Add("Swift");
             EF.SkillList.Add("Objective-C");
+            EF.SkillList.Add("XCode");
             EF.MediaRefs.Add("/Media/EF/gat1.png");
             EF.MediaRefs.Add("/Media/EF/gat2.png");
             EF.MediaRefs.Add("/Media/EF/gat3.png");
