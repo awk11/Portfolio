@@ -23,7 +23,7 @@ namespace Portfolio
             #region Professional Work Projects Setup
             ProfessionalWork = new List<Project>();
 
-            Project Modis = new Project("Modis/Unisys/DHS", "/Media/Tiles/modis", "I'm currently working as a software development contractor at Unisys, where I am part of the LBI/ITI Team. I do full stack work on various applications related to contracts with the US DHS/CBP, ranging from bug fixing to concepting to deployment. This is a Public Trust position, and I am going through a background investigation currently to obtain my public trust with the DHS.");
+            Project Modis = new Project("Modis/Unisys/DHS", "/Media/Tiles/modis", "I'm currently working as a software development contractor at Unisys, where I am part of the LBI/ITI Team. I do full stack work on various applications related to contracts with the US DHS/CBP, ranging from concepting code architectures to deployment. This is a Public Trust position, and I am going through a background investigation currently to obtain my public trust with the DHS.");
             Modis.SkillList.Add("Full-Time");
             Modis.SkillList.Add("Vue.js");
             Modis.SkillList.Add("JavaScript");
